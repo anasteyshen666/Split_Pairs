@@ -1,0 +1,14 @@
+def split_pairs(text):
+    h = []
+    j = 0
+    k = 2
+    for i in range(len(text) // 2):
+        g = text[j:k]
+        h.append(g)
+        j += 2
+        k += 2
+    if len(text) % 2 != 0:
+        l = text[len(text) - 1:]
+        l += '_'
+        h.append(l)
+    return h
